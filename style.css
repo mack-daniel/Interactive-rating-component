@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+h1 {
+  font-weight: 700;
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+
+.card {
+  margin: 0 auto;
+  width: 50%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 2rem;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.card > * {
+  margin: 1rem 0;
+}
+.star {
+  background-color: hsl(216, 12%, 8%);
+  padding: 0.678rem;
+  border-radius: 50%;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  padding: 0.868rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+#hidden {
+  display: none;
+  text-align: center;
+}
+
+.given-rate {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(25, 97%, 53%);
+  padding: 1rem;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+input[type="Radio"] {
+  display: none;
+}
+label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: hsl(217, 12%, 63%);
+  color: hsl(213, 19%, 18%);
+  cursor: pointer;
+  transform: scale(1.2);
+  padding: 5px 10px;
+  margin: 20px;
+  font-size: 15px;
+}
+input[type="Radio"]:checked + label {
+  background: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+input[type="Radio"]:hover + label {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 991px) {
+  .card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 571px) {
+  .card {
+    width: 90%;
+  }
+  label {
+    margin: 10px;
+  }
+}
